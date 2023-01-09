@@ -16,15 +16,16 @@
 }
 
 body{
-    background-image: linear-gradient(75deg, #773d24 16%, #c33e05, #E34400);
+    background-image: linear-gradient(75deg, #512b1a 16%, #bd5427, #db5f2a);
 }
 
 .cabecalho {
+    background-image: linear-gradient(90deg, #bb3b04 60%, #01000084);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 5px 24px;
+    padding: 5px 4px;
 }
 
 .logo-cabecalho {
@@ -45,11 +46,11 @@ body{
     text-decoration: none;
     padding: 10px;
     border-radius: 50px;
+    transition: background-image 3s linear;
 }
 
 .menu-item:hover {
-    background-image: linear-gradient(90deg, #01000084, #bb3b04);
-    transition: 0.5s;
+    background-image: linear-gradient(90deg, #0100001d, #bb3b04);
 }
 
 .conteudo {
@@ -63,23 +64,26 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .sec1-div1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
 }
 
 .conteudo-principal-titulo {
     font-family: var(--letra-grande);
     font-size: 2.5em;
-    color: #f9cda5;
-    text-shadow: 2px 5px 6px #463627b0;
+    color: #fae4cf;
+    text-shadow: 2px 5px 6px #000000b0;
 }
 
 .conteudo-principal-titulo-2 {
     font-family: var(--letra-pequena);
+    color: rgba(255, 255, 255, 0.883);
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -95,17 +99,40 @@ body{
     font-size: 1em;
     color: #0a0505df;
     box-shadow: 2px 2px 3px #00000060;
+    transition: all 0.5s linear;
 }
 
 .botao:hover {
     background-image: linear-gradient(90deg, #01000084, #bb3b04);
     box-shadow: none;
-    transition: 0.7s;
+    cursor: pointer;
 }
 
 .imagem-goku {
     padding-top: 50px;
     height: 500px;
+}
+
+.sec-personagens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-personagens-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    height: 150px;
+}
+
+.personagens {
+    height: 110px;
+    transition: all 0.5s linear;
+}
+
+.personagens:hover {
+    transform: scale(1.5, 1.5);
 }
 
 .sec2-div1 {
@@ -114,7 +141,6 @@ body{
     align-items: center;
     gap: 24px;
     margin-top: 48px;
-
 }
 
 .conteudo-secundario-titulo {
@@ -136,7 +162,6 @@ body{
 .rodape {
     border-top: 0.4px solid #000000;
     padding: 20px;
-    
 }
 
 .imagem-rodape {
