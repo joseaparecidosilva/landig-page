@@ -16,7 +16,10 @@
 }
 
 body{
+    background-color: #d26030;
     background-image: linear-gradient(75deg, #512b1a 16%, #bd5427, #db5f2a);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .cabecalho {
@@ -82,6 +85,7 @@ body{
 }
 
 .conteudo {
+    padding: 30px;
     border-top: 0.4px solid #6e2404;
     margin-bottom: 48px;
     transition: 1s;
@@ -99,8 +103,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 32px;
     margin: 90px 0px;
+    padding: 20px;
 }
 
 .conteudo-principal-titulo {
@@ -150,19 +156,23 @@ body{
 
 .sec-personagens {
     display: flex;
-    justify-content: space-around;
+    margin: auto;
+    max-width: 900px;
+    height: fit-content;
 }
 
 .sec-personagens-div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
     width: 900px;
-    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .personagens {
-    height: 110px;
+    padding: 15px 20px;
+    max-height: 100px;
     transition: all 0.5s linear;
 }
 
