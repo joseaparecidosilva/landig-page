@@ -20,37 +20,65 @@ body{
 }
 
 .cabecalho {
-    background-image: linear-gradient(90deg, #bb3b04 60%, #01000084);
+    margin: auto;
+    max-width: 1300px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    padding: 5px 4px;
+    justify-content: space-between;
+    background-image: linear-gradient(linear-gradient(90deg, #bb3b04 60%, #01000084));
+    padding: 5px 20px;
 }
 
-.logo-cabecalho {
-    max-width: 50px;
-    padding-right: 300px;
-}
-
-.navbar {
-    display: flex;
-    gap: 32px;
-}
-
-.menu-item {
+.cabecalho a {
     font-family: var(--letra-pequena);
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
-    color: #faecec;
     text-decoration: none;
-    padding: 10px;
-    border-radius: 50px;
-    transition: background-image 3s linear;
+    color: inherit;
 }
 
-.menu-item:hover {
-    background-image: linear-gradient(90deg, #0100001d, #bb3b04);
+.cabecalho-logo {
+    padding: 5px 15px;
+}
+
+.ri-menu-line {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 52px;
+}
+
+#toogler,
+.cabecalho label {
+    display: none;
+}
+
+@media screen and 
+(max-width: 600px){
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .cabecalho label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    #toogler:checked ~ .menu {
+        max-height: 100%;
+    }
 }
 
 .conteudo {
@@ -61,7 +89,7 @@ body{
 
 .sec1 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 30px;
@@ -72,6 +100,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    margin: 90px 0px;
 }
 
 .conteudo-principal-titulo {
@@ -111,6 +140,12 @@ body{
 .imagem-goku {
     padding-top: 50px;
     height: 500px;
+}
+
+@media all and (max-width: 650px){
+    .sec1 {
+        flex-direction: column;
+    }
 }
 
 .sec-personagens {
