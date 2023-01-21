@@ -16,8 +16,8 @@
 }
 
 body{
-    background-color: #d26030;
-    background-image: linear-gradient(75deg, #512b1a 16%, #bd5427, #db5f2a);
+    background-color: #e26936;
+    background-image: linear-gradient(0deg, #000000b0, #dc6200 30%, #ff8c3e, #863f20);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -46,8 +46,18 @@ body{
 }
 
 .ri-menu-line {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
+    background-color: #6e240449;
+    padding:20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 100,
+    'wght' 600,
+    'GRAD' 200,
+    'opsz' 98
 }
 
 .list {
@@ -84,8 +94,21 @@ body{
     }
 }
 
+.login {
+    padding: 5px;
+    background-color: #f44c03;
+    border-radius: 60px;
+}
+
+.login > a {
+    text-align: center;
+    margin: auto;
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+
 .conteudo {
-    padding: 30px;
+    /* padding: 30px; */
     border-top: 0.4px solid #6e2404;
     margin-bottom: 48px;
     transition: 1s;
@@ -105,7 +128,7 @@ body{
     align-items: center;
     text-align: center;
     gap: 32px;
-    margin: 90px 0px;
+    margin: 20px 0px;
     padding: 20px;
 }
 
@@ -133,18 +156,18 @@ body{
     font-weight: bolder;
     font-size: 1em;
     color: #0a0505df;
-    box-shadow: 2px 2px 3px #00000060;
+    box-shadow: 2px 2px 6px #00000060;
     transition: all 0.5s linear;
 }
 
 .botao:hover {
-    background-image: linear-gradient(90deg, #01000084, #bb3b04);
-    box-shadow: none;
+    background-image: linear-gradient(90deg, #7c2905, #e04706);
+    box-shadow: 2px 2px 6px #dc622e inset;
     cursor: pointer;
 }
 
 .imagem-goku {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     height: 500px;
 }
 
@@ -180,10 +203,34 @@ body{
     transform: scale(1.5, 1.5);
 }
 
+/* .apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: ;
+    margin: auto;
+}
+
+.apresentacao-d1 {
+    margin: auto;
+    background-color: #000000;
+    padding: 100px 23%;
+    width: 100%;
+    min-width: 450px;
+}
+
+.apresentacao-d2 {
+    margin: auto;
+    background-color: red;
+    padding: 100px 23%;
+    width: 852px;
+    min-width: 450px;
+} */
+
 .sec2-div1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 24px;
     margin-top: 48px;
 }
